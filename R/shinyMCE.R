@@ -16,7 +16,7 @@
 #' @export
 tinyMCE <- function(inputId, content, options = NULL){
   tagList(
-    singleton(tags$head(tags$script(src = "//cdn.tiny.cloud/1/5a5deew2z9gml5pwn95iosioop446qny3vyfh994kujzkwu6/tinymce/5/tinymce.min.js", referrerpolicy="origin"))),
+    singleton(tags$head(tags$script(src = "//cdn.tiny.cloud/1/oiicjnzsg7mcep5lmaq4o16egsn2cha0gtopn2zaf59y3euz/tinymce/5/tinymce.min.js", referrerpolicy="origin"))),
     tags$div(id = inputId, class = "shinytinymce", content, style = "resize: none; width: 100%; height: 100%; border-style: none; background: gainsboro;"),
     tags$script(paste0('tinymce.init({selector:".shinytinymce", ', options, '});')),
     singleton(tags$head(tags$script(src = 'shinyMCE/shiny-tinymce-bindings.js')))
